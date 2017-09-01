@@ -8,8 +8,6 @@
 
 #import "ZYViewController.h"
 
-#import "ZYTableView.h"
-
 @interface ZYViewController ()
 
 @property (nonatomic,   strong)     ZYTableView * tableView;
@@ -20,9 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.tableView];
 }
 
+- (void)setType:(ZCellType)type
+{
+    [self.view addSubview:self.tableView];
+    [self.tableView setSourceNum:50 type:(ZCellType)type];
+}
 
 -(ZYTableView *)tableView{
     if(_tableView == nil){

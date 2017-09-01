@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ZYTableView.h"
+
 @interface ZYViewController : UIViewController
+
+@property (nonatomic,   assign)     ZCellType type;
 
 @end

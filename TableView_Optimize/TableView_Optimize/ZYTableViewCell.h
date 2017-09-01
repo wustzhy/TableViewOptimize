@@ -13,5 +13,8 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier cellSize:(CGSize)cellSize;
 
+@property (nonatomic,   strong)     UIImageView * imageView1;
+
+@property (nonatomic,   strong)     UIImageView * imageView2;
 
 @end
